@@ -13,8 +13,8 @@ $(document).ready(function(){
     /*Aqui cambiamos el texto del primer enlace*/
     if(imagen == 'images/noticia1.jpg')
     {
-      $('.titulo_noticia').text("Formaliza UABC colaboración con CEITEC (República Checa)");
-      $('.texto_noticia').text("Se concretó convenio de colaboración institucional entre la UABC Campus Tijuana y el  Central European Institute of Technology (CEITEC), República Checa, con el objetivo de  desarrollar...");
+      $('.titulo_noticia').text("Reconocen a entrenador de Cimarrones UABC por su trabajo en el Mundial Universitario");
+      $('.texto_noticia').text("icardo Fernando Licona Ojeda, entrenador del equipo de futbol americano de Cimarrones  UABC desde 2007, recientemente representó a México en el Mundial Universitario llevado  a cabo en...");
     }
 
     /*Aqui cambiamos el texto del segundo enlace*/
