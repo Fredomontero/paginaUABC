@@ -1,0 +1,285 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Universidad Autónoma de Baja California</title>
+  <link rel="icon" href="images/logo.png">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+
+
+  <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+  <script src="js/jfile.js"></script>
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!--Esta es la sección de campus, imagen y titulo de la página/-->
+  <div class="container">
+    <div class="header">
+      <div class="row col-xs-12">
+        <p>&nbsp</p>
+        <p>Campus:   <a href="http://campus.mxl.uabc.mx/" id="mxl">Mexicali   </a>|<a href="http://www.ens.uabc.mx" id="ens">   Ensenada</a></p>
+      </div>
+      <div class="titulo row">
+        <div class="col-xs-2">
+          <img src="images/logo.png" alt="logo_UABC" style="width=121 height=163" class="img-responsive">
+        </div>
+        <div class="col-xs-10" style="position: relative;">
+          <img src="images/titulo_uabc.png" alt="titulo" style="width = 923 height = 66" class="img-responsive">
+          <div class="iconos" style="position: absolute; left: 720px; top: 130px;">
+            <a href="archivos/programa.pdf"> <img src="images/programa_desarrollo.png" class="img-responsive" /></a>
+          </div>
+          <div class="iconos" style="position: absolute; left: 840px; top: 130px;">
+            <a href="archivos/Informe_2015.pdf"><img src="images/informe.png" class="img-responsive" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Aqui la sección de campus, imagen y titulo de la página/-->
+
+  <!--Añadimos algunos espacios para dar formato/-->
+  <br>
+  <!--Aqui empieza el navbar/-->
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="index.php">Inicio</a>
+          </li>
+
+          <!--Primer menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Bienvenida <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="bienvenida.html">Bienvenida</a></li>
+              <li class="divider"></li>
+              <li><a href="resenahistorica.html">Reseña Histórica</a></li>
+              <li class="divider"></li>
+              <li><a href="mision.html">Misión</a></li>
+              <li class="divider"></li>
+              <li><a href="vision.html">Visión</a></li>
+              <li class="divider"></li>
+              <li><a href="archivos/organigrama.pdf">Organigrama</a></li>
+              <li class="divider"></li>
+              <li><a href="domicilio.html">Domicilio</a></li>
+            </ul>
+          </li>
+
+          <!--Segundo menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Vicerrectoría <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="ciia.html">Cooperación Internacional e Intercambio Académico</a></li>
+              <li class="divider"></li>
+              <li><a href="sege.html">Servicios Estudiantiles y Gestión Escolar</a></li>
+              <li class="divider"></li>
+              <li><a href="pi.html">Posgrado e Investigación</a></li>
+              <li class="divider"></li>
+              <li><a href="fb.html">Formación Básica</a></li>
+              <li class="divider"></li>
+              <li><a href="fpvu.html">Formación Profesional y Vinculación Universitaria</a></li>
+              <li class="divider"></li>
+              <li><a href="pii.html">Planeación e Imagen Institucional</a></li>
+              <li class="divider"></li>
+              <li><a href="ia.html">Información Académica</a></li>
+              <li class="divider"></li>
+              <li><a href="rh.html">Recursos Humanos</a></li>
+              <li class="divider"></li>
+              <li><a href="sa.html">Servicios Administrativos</a></li>
+            </ul>
+          </li>
+
+          <!--Tercer menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Unidades Académicas <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Facultades</li>
+              <li><a href="http://fcqi.tij.uabc.mx/">Ciencias Químicas e Ingeniería</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/">Medicina y Psicología</a></li>
+              <li class="divider"></li>
+              <li><a href="http://odontologia.tij.uabc.mx/">Odontología</a></li>
+              <li class="divider"></li>
+              <li><a href="http://deportes.uabc.mx/Tijuana/">Deportes</a></li>
+              <li class="divider"></li>
+              <li><a href="http://fca.tij.uabc.mx">Contaduría y Administración</a></li>
+              <li class="divider"></li>
+              <li><a href="http://feyri.tij.uabc.mx/">Economía y Relaciones Internacionales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.derechotijuanauabc.com/">Derecho</a></li>
+              <li class="divider"></li>
+              <li><a href="http://ftm.tij.uabc.mx/">Turismo y Mercadotecnia</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.uabchumanidades.com/">Humanidades y Ciencias Sociales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://artes-uabc.info/">Artes</a></li>
+              <li class="divider"></li>
+              <li><a href="http://idiomas.tij.uabc.mx/">Idiomas Tijuana</a></li>
+              <li class="divider"></li>
+              <li><a href="http://idiomas.uabc.mx/web/facultad-de-idiomas/inicio">Idiomas Tecate</a></li>
+              <li class="divider"></li>
+              <li><a href="http://fintecate.uabc.edu.mx/">Ingeniería y Negocios</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Institutos</li>
+              <li><a href="http://iih.tij.uabc.mx ">Investigaciones Históricas</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Escuelas</li>
+              <li><a href="http://citecuvp.tij.uabc.mx/">ECITEC</a></li>
+              <li class="divider"></li>
+              <li><a href="http://cisaluduvp.tij.uabc.mx/">ECISALUD</a></li>
+            </ul>
+          </li>
+
+          <!--Cuarto menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Servicios a Estudiantes <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://csege.uabc.mx/web/csege1/convocatoria-de-becas">Becas</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.uabc.mx/cciia/">Intercambio estudiantil</a></li>
+              <li class="divider"></li>
+              <li><a href="http://serviciosocial.uabc.mx">Servicio social</a></li>
+              <li class="divider"></li>
+              <li><a href="practicasprofesionales.html">Prácticas profesionales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://csege.uabc.mx/web/csege1/tramite-unico-de-titulacion1">Titulación</a></li>
+              <li class="divider"></li>
+              <li><a href="http://egresados.uabc.mx/">Egresados</a></li>
+              <li class="divider"></li>
+              <li><a href="http://tutorias.uabc.mx:8080/login.php">Tutorías</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.uabc.mx/formacionbasica/orientacion.htm">Orientación psicopedagógica</a></li>
+              <li class="divider"></li>
+              <li><a href="http://celexbc.com.mx">Idiomas extranjeros</a></li>
+              <li class="divider"></li>
+              <li><a href="https://sites.google.com/a/uabc.edu.mx/cursos-culturales/">Cursos culturales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://deportes.uabc.mx/Tijuana/">Actividades deportivas</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=145">Atención médica</a></li>
+              <li class="divider"></li>
+              <li><a href="http://sriagral.uabc.mx/Externos/TribunalUniversitario/index.html">Tribunal universitario</a></li>
+              <li class="divider"></li>
+              <li><a href="http://cea.mxl.uabc.mx/">Centro de educación abierta</a></li>
+              <li class="divider"></li>
+              <li><a href="http://biblioteca.uabc.mx/">Biblioteca</a></li>
+            </ul>
+          </li>
+
+          <!--Quinto menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Servicios a la Comunidad <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://odontologia.tij.uabc.mx/clinicas/servicios.html">Salud bucal</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=145">Servicios médicos</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=147">Atención psicológica</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=139">Programa higiene escolar</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?cat=33">Atención a niños disléxicos</a></li>
+              <li class="divider"></li>
+              <li><a href="http://celexbc.com.mx">Idiomas extranjeros</a></li>
+              <li class="divider"></li>
+              <li><a href="https://sites.google.com/a/uabc.edu.mx/cursos-culturales/">Cursos culturales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://deportes.uabc.mx/Tijuana/">Actividades deportivas</a></li>
+            </ul>
+          </li>
+
+          <li><a href="directorio.html">Contacto</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--Aqui termina el navbar/-->
+
+  <div class="container">
+
+    <div class="well welcome ">
+      <p>Servicios</p>
+    </div>
+
+    <ul class="list-group">
+      <li class="list-group-item listtype ">Revisión y seguimiento de manuales de organización de las dependencias académicas y administrativas de la Vicerrectoría Campus Tijuana.</li>
+      <li class="list-group-item listtype ">Coordinar las activivades relacionadas con Protección Civil del Campus Tijuana`.</li>
+      <li class="list-group-item listtype ">Administración del portal de internet de la Vicerrectoría Campus Tijuana y supervisión de los contenidos de las páginas de las unidades académicas del Campus Tijuana.</li>
+      <li class="list-group-item listtype ">Elaboración del Informe Anual de la Vicerrectoría del Campus Tijuana.</li>
+      <li class="list-group-item listtype ">Desarrollo de proyectos internos de imagen institucional.</li>
+      <li class="list-group-item listtype ">Seguimiento de la Auditoría Ambiental del Campus Tijuana.</li>
+      <li class="list-group-item listtype ">Operación del Almacén Temporal de Residuos Peligrosos.</li>
+      <li class="list-group-item listtype ">Asistencia a dependencias académicas y administrativas en el manejo de medidas de seguridad en las instalaciones del Campus Tijuana y en la capacitación del personal administrativo en el manejo de contingencias.</li>
+    </ul>
+
+  </div>
+
+  <div class="container back">
+    <a class="back"  href="pii.html">Regresar</a>
+  </div>
+  <div class="container">
+    <div class="col-sm-12">
+      <img src="images/separador2.png" class="img-responsive" >
+    </div>
+
+    <br> <br> <br><br>
+
+    <div class="row" id="lista">
+      <!--Primer columna/!-->
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="http://www.uabc.mx/dir-tel/"><img src="icon/directorio.png" height="30" width="30"> Directorio telefónico </a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://biblioteca.uabc.mx/"><img src="icon/biblioteca.png" height="30" width="30"> Biblioteca</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://sriagral.uabc.mx/Externos/AbogadoGeneral/Legislacion/Reg.htm"><img src="icon/normatividad.png" height="30" width="30"> Normatividad</a></li>
+        </ul>
+      </div>
+
+      <!--Segunda Columna columna/!-->
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="http://correo.uabc.edu.mx"><img src="icon/correo.png" height="30" width="30"> Correo UABC</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="programas.pdf"><img src="icon/posgrado.png" height="30" width="30"> Posgrados</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://www.uabc.mx/juntadegobierno/  "><img src="icon/gobierno.png" height="30" width="30"> Junta de Gobierno</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="archivos/plano.pdf"><img src="icon/mapa.png" height="30" width="30"> Plano del Campus</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://gaceta.uabc.edu.mx/"><img src="icon/periodico.png" height="30" width="30"> Gaceta Universitaria</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://transparencia.uabc.mx/"><img src="icon/transparencia.png" height="30" width="30"> Transparencia</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="archivos/reunion.pdf"><img src="icon/reunion.png" height="30" width="30"> Puntos de Reunión</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://www.imagenuabc.tv/"><img src="icon/galeria.png" height="30" width="30"> Imagen UABC tv</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://fundacionuabc.org/"><img src="icon/FUABC.png" height="30" width="30"> Fundación UABC</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br>
+
+  <div class="container">
+    <div class="footer">
+      <p>
+        Calzada Universidad 14418 Parque Industrial Internacional Tijuana B.C. 22427 Tel.979 75 00. Actualizada 11-Agosto-2016. <br>
+        Horario de servicio de 8:30 am a 1:30 pm y de 3:00 pm a 6:00 pm | Comentarios y sugerencias a: vicerrectoriatij@uabc.edu.mx
+      </p>
+    </div>
+  </div>
+
+</body>
+</html>

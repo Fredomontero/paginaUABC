@@ -1,0 +1,498 @@
+
+<!DOCTYPE html>
+<html lang="en" ng-app="dirApp" >
+<head>
+  <meta charset="UTF-8">
+  <title>Universidad Autónoma de Baja California</title>
+  <link rel="icon" href="images/logo.png">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+
+
+  <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+  <script src="js/jfile.js"></script>
+  <script src="lib/angular.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+  <!--Aqui empieza el navbar/-->
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="index.php">Inicio</a>
+          </li>
+
+          <!--Primer menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Bienvenida <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="bienvenida.html">Bienvenida</a></li>
+              <li class="divider"></li>
+              <li><a href="resenahistorica.html">Reseña Histórica</a></li>
+              <li class="divider"></li>
+              <li><a href="mision.html">Misión</a></li>
+              <li class="divider"></li>
+              <li><a href="vision.html">Visión</a></li>
+              <li class="divider"></li>
+              <li><a href="archivos/organigrama.pdf">Organigrama</a></li>
+              <li class="divider"></li>
+              <li><a href="domicilio.html">Domicilio</a></li>
+            </ul>
+          </li>
+
+          <!--Segundo menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Vicerrectoría <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="ciia.html">Cooperación Internacional e Intercambio Académico</a></li>
+              <li class="divider"></li>
+              <li><a href="sege.html">Servicios Estudiantiles y Gestión Escolar</a></li>
+              <li class="divider"></li>
+              <li><a href="pi.html">Posgrado e Investigación</a></li>
+              <li class="divider"></li>
+              <li><a href="fb.html">Formación Básica</a></li>
+              <li class="divider"></li>
+              <li><a href="fpvu.html">Formación Profesional y Vinculación Universitaria</a></li>
+              <li class="divider"></li>
+              <li><a href="pii.html">Planeación e Imagen Institucional</a></li>
+              <li class="divider"></li>
+              <li><a href="ia.html">Información Académica</a></li>
+              <li class="divider"></li>
+              <li><a href="rh.html">Recursos Humanos</a></li>
+              <li class="divider"></li>
+              <li><a href="sa.html">Servicios Administrativos</a></li>
+            </ul>
+          </li>
+
+          <!--Tercer menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Unidades Académicas <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Facultades</li>
+              <li><a href="http://fcqi.tij.uabc.mx/">Ciencias Químicas e Ingeniería</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/">Medicina y Psicología</a></li>
+              <li class="divider"></li>
+              <li><a href="http://odontologia.tij.uabc.mx/">Odontología</a></li>
+              <li class="divider"></li>
+              <li><a href="http://deportes.uabc.mx/Tijuana/">Deportes</a></li>
+              <li class="divider"></li>
+              <li><a href="http://fca.tij.uabc.mx">Contaduría y Administración</a></li>
+              <li class="divider"></li>
+              <li><a href="http://feyri.tij.uabc.mx/">Economía y Relaciones Internacionales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.derechotijuanauabc.com/">Derecho</a></li>
+              <li class="divider"></li>
+              <li><a href="http://ftm.tij.uabc.mx/">Turismo y Mercadotecnia</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.uabchumanidades.com/">Humanidades y Ciencias Sociales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://artes-uabc.info/">Artes</a></li>
+              <li class="divider"></li>
+              <li><a href="http://idiomas.tij.uabc.mx/">Idiomas Tijuana</a></li>
+              <li class="divider"></li>
+              <li><a href="http://idiomas.uabc.mx/web/facultad-de-idiomas/inicio">Idiomas Tecate</a></li>
+              <li class="divider"></li>
+              <li><a href="http://fintecate.uabc.edu.mx/">Ingeniería y Negocios</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Institutos</li>
+              <li><a href="http://iih.tij.uabc.mx ">Investigaciones Históricas</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Escuelas</li>
+              <li><a href="http://citecuvp.tij.uabc.mx/">ECITEC</a></li>
+              <li class="divider"></li>
+              <li><a href="http://cisaluduvp.tij.uabc.mx/">ECISALUD</a></li>
+            </ul>
+          </li>
+
+          <!--Cuarto menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Servicios a Estudiantes <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://csege.uabc.mx/web/csege1/convocatoria-de-becas">Becas</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.uabc.mx/cciia/">Intercambio estudiantil</a></li>
+              <li class="divider"></li>
+              <li><a href="http://serviciosocial.uabc.mx">Servicio social</a></li>
+              <li class="divider"></li>
+              <li><a href="practicasprofesionales.html">Prácticas profesionales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://csege.uabc.mx/web/csege1/tramite-unico-de-titulacion1">Titulación</a></li>
+              <li class="divider"></li>
+              <li><a href="http://egresados.uabc.mx/">Egresados</a></li>
+              <li class="divider"></li>
+              <li><a href="http://tutorias.uabc.mx:8080/login.php">Tutorías</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.uabc.mx/formacionbasica/orientacion.htm">Orientación psicopedagógica</a></li>
+              <li class="divider"></li>
+              <li><a href="http://celexbc.com.mx">Idiomas extranjeros</a></li>
+              <li class="divider"></li>
+              <li><a href="https://sites.google.com/a/uabc.edu.mx/cursos-culturales/">Cursos culturales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://deportes.uabc.mx/Tijuana/">Actividades deportivas</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=145">Atención médica</a></li>
+              <li class="divider"></li>
+              <li><a href="http://sriagral.uabc.mx/Externos/TribunalUniversitario/index.html">Tribunal universitario</a></li>
+              <li class="divider"></li>
+              <li><a href="http://cea.mxl.uabc.mx/">Centro de educación abierta</a></li>
+              <li class="divider"></li>
+              <li><a href="http://biblioteca.uabc.mx/">Biblioteca</a></li>
+            </ul>
+          </li>
+
+          <!--Quinto menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Servicios a la Comunidad <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://odontologia.tij.uabc.mx/clinicas/servicios.html">Salud bucal</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=145">Servicios médicos</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=147">Atención psicológica</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=139">Programa higiene escolar</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?cat=33">Atención a niños disléxicos</a></li>
+              <li class="divider"></li>
+              <li><a href="http://celexbc.com.mx">Idiomas extranjeros</a></li>
+              <li class="divider"></li>
+              <li><a href="https://sites.google.com/a/uabc.edu.mx/cursos-culturales/">Cursos culturales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://deportes.uabc.mx/Tijuana/">Actividades deportivas</a></li>
+            </ul>
+          </li>
+
+          <li><a href="directorio.html">Contacto</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--Aqui termina el navbar/-->
+
+  <div class="container" ng-controller="dirController as ctrl" >
+
+    <div class="well welcome ">
+      <p>Directorio</p>
+    </div>
+
+
+
+    <div class="row">
+      <div class="col-sm-6  people_wo " ng-repeat="dude in ctrl.dudes">
+        <div class="col-sm-3">
+          <img src="{{dude.imagen}}" height="140" width="140" >
+        </div>
+        <div class="col-sm-6 col-sm-offset-1 ">
+          <h6><b>{{dude.cargo}}</b></h6>
+          <h6>{{dude.nombre}}</h6>
+          <h6>{{dude.extension}}</h6>
+          <h6><b>{{dude.correo}}</b></h6>
+          <button type="button" class="btn btn-success btn-xs " data-toggle="modal" data-target="#modal_{{dude.id}}" >Ver semblanza</button>
+        </div>
+        <!-- Aquí va el modal/-->
+        <div class="modal fade" id="modal_{{dude.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">{{dude.nombre}}</h3>
+                <h4 class="modal-title" id="myModalLabel" >{{dude.cargo}}</h4>
+              </div>
+              <div class="modal-body">
+                <p>{{dude.descripcion}}</p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-info" href="{{dude.semblanza}}" role="button">Descargar</a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Aquí termina el modal/-->
+      </div>
+    </div>
+
+    <br>
+
+    <div class="row">
+      <div class="col-sm-6  people " ng-repeat="persona in ctrl.personas">
+        <div class="col-sm-3">
+          <img src="{{persona.imagen}}" height="140" width="140" >
+        </div>
+        <div class="col-sm-6 col-sm-offset-1 ">
+          <h6><b>{{persona.cargo}}</b></h6>
+          <h6>{{persona.nombre}}</h6>
+          <h6>{{persona.extension}}</h6>
+          <h6><b>{{persona.correo}}</b></h6>
+          <button type="button" class="btn btn-success btn-xs " data-toggle="modal" data-target="#modal_{{persona.id}}" >Ver semblanza</button>
+        </div>
+        <!-- Aquí va el modal/-->
+        <div class="modal fade" id="modal_{{persona.id}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h3 class="modal-title" id="myModalLabel">{{persona.nombre}}</h3>
+                <h4 class="modal-title" id="myModalLabel" >{{persona.cargo}}</h4>
+              </div>
+              <div class="modal-body">
+                <p>{{persona.descripcion}}</p>
+              </div>
+              <div class="modal-footer">
+                <a class="btn btn-info" href="{{persona.semblanza}}" role="button">Descargar</a>
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Aquí termina el modal/-->
+      </div>
+    </div>
+
+    <br>
+
+    <div class="col-sm-6  people_woo " ng-repeat="otro in ctrl.otros">
+      <div class="col-sm-3">
+        <img src="{{otro.imagen}}" height="140" width="140" >
+      </div>
+      <div class="col-sm-6 col-sm-offset-1 ">
+        <h6><b>{{otro.cargo}}</b></h6>
+        <h6>{{otro.nombre}}</h6>
+        <h6><b><a class="lista" href="{{otro.enlace}}">{{otro.enlace}}</a></b></h6>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="container back">
+    <a class="back"  href="index.php">Regresar</a>
+  </div>
+  <div class="container">
+    <div class="col-sm-12">
+      <img src="images/separador2.png" class="img-responsive" >
+    </div>
+
+    <br> <br> <br><br>
+
+    <div class="row" id="lista">
+      <!--Primer columna/!-->
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="http://www.uabc.mx/dir-tel/"><img src="icon/directorio.png" height="30" width="30"> Directorio telefónico </a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://biblioteca.uabc.mx/"><img src="icon/biblioteca.png" height="30" width="30"> Biblioteca</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://sriagral.uabc.mx/Externos/AbogadoGeneral/Legislacion/Reg.htm"><img src="icon/normatividad.png" height="30" width="30"> Normatividad</a></li>
+        </ul>
+      </div>
+
+      <!--Segunda Columna columna/!-->
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="http://correo.uabc.edu.mx"><img src="icon/correo.png" height="30" width="30"> Correo UABC</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="programas.pdf"><img src="icon/posgrado.png" height="30" width="30"> Posgrados</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://www.uabc.mx/juntadegobierno/  "><img src="icon/gobierno.png" height="30" width="30"> Junta de Gobierno</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="archivos/plano.pdf"><img src="icon/mapa.png" height="30" width="30"> Plano del Campus</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://gaceta.uabc.edu.mx/"><img src="icon/periodico.png" height="30" width="30"> Gaceta Universitaria</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://transparencia.uabc.mx/"><img src="icon/transparencia.png" height="30" width="30"> Transparencia</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="archivos/reunion.pdf"><img src="icon/reunion.png" height="30" width="30"> Puntos de Reunión</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://www.imagenuabc.tv/"><img src="icon/galeria.png" height="30" width="30"> Imagen UABC tv</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://fundacionuabc.org/"><img src="icon/FUABC.png" height="30" width="30"> Fundación UABC</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <br><br><br><br><br>
+
+  <div class="container">
+    <div class="footer">
+      <p>
+        Calzada Universidad 14418 Parque Industrial Internacional Tijuana B.C. 22427 Tel.979 75 00. Actualizada 11-Agosto-2016. <br>
+        Horario de servicio de 8:30 am a 1:30 pm y de 3:00 pm a 6:00 pm | Comentarios y sugerencias a: vicerrectoriatij@uabc.edu.mx
+      </p>
+    </div>
+  </div>
+
+<script type="text/javascript">
+  angular.module('dirApp',[])
+    .controller('dirController',[function(){
+      var self = this;
+      self.personas = [
+        {
+          id: 2,
+          cargo: "Secretario Particular de Vicerrectoría",
+          nombre: "Lic. Jorge Magdaleno Arenas",
+          extension: "Tel. (664) 979-7510 y 979-7511",
+          correo: "jorgemagdaleno@uabc.edu.mx",
+          imagen: "icon/him.png",
+          semblanza: "archivos/semblanzas/semblanzaJMA.pdf",
+          descripcion: "Licenciado en Comunicación por la Facultad de Humanidades y Ciencias Sociales y Diplomado en Organización de Eventos por la Facultad de Turismo y Mercadotecnia –UABC Campus Tijuana. Fungió como encargado de UABC Radio Tijuana de 2004 a 2007 con Certificado de Locutor. Es Secretario Particular de Vicerrectoría de noviembre de 2007 a la fecha; así mismo, es representante de UABC Campus Tijuana ante la Red Nacional de Redes de Comunicación de la ANUIES."
+        },
+        {
+          id: 3,
+          cargo: "Jefe del Departamento de Formación Básica",
+          nombre: "M.S.P. Luis Alberto Alcántara Jurado",
+          extension: "Tel. (664) 979-7512 y 979-7513",
+          correo: "luis.alcantara@uabc.edu.mx",
+          imagen: "icon/him.png",
+          semblanza: "archivos/semblanzas/semblanzaLAAJ.pdf",
+          descripcion: "Químico Industrial de profesión, con Maestría en Salud Pública, dedicado a la docencia universitaria por 27 años en la Facultad de Ciencias Químicas e Ingeniería, pertenece a la academia biólogo farmacéutica de la facultad y es miembro de comité académico de CENEVAL en área de química clínica. Ha participado en investigaciones en el área de microbiología sanitaria, microbiología clínica y en diversos estudios epidemiológicos de la región. También se desempeñó como coordinador de formación básica de la misma facultad."
+        },
+        {
+          id: 4,
+          cargo: "Jefe del Departamento de Posgrado e Investigación",
+          nombre: "Dr. Sergio Valdés Pasarón",
+          extension: "Tel. (664) 979-7516 y 979-7517",
+          correo: "s.valdes@uabc.edu.mx",
+          imagen: "icon/him.png",
+          semblanza: "archivos/semblanzas/semblanzaSVP.pdf",
+          descripcion: "Maestro en Economía Aplicada y Doctor en Ciencias Económicas. Es Miembro de Sistema Nacional de Investigadores (SNI), donde actualmente tiene el reconocimiento de candidato. Profesor de la Facultad de Economía y Relaciones Internacionales. Ha publicado como autor y en coautoría diversos artículos en revistas especializadas sobre tópicos relacionados con economía mexicana y educación. Ha impartido diversos cursos a nivel de maestría entre los que destacan: Finanzas Públicas, Macroeconomía, Contabilidad, Economía Internacional, Mercado de Dinero y Capitales, Evaluación de Proyectos de Inversión, entre otras. Ha dirigido 5 Tesis de maestría."
+        },
+        {
+          id: 5,
+          cargo: "Jefa del Departamento de Planeación e Imagen Institucional",
+          nombre: "Lic. Blanca Estela Hernández Santana",
+          extension: "Tel. (664) 979-7528 y 979-7529",
+          correo: "blancahernandez@uabc.edu.mx",
+          imagen: "icon/her.png",
+          semblanza: "archivos/semblanzas/semblanzaBEHS.pdf",
+          descripcion: "Licenciada en Administración de Empresas por la Universidad Autónoma de Baja California, donde se ha desempeñado como administradora de la Facultad de Ciencias Químicas e Ingeniería de 2003 a 2010, administradora de la Facultad de Economía y Relaciones Internacionales 2010-2011, y encargada del área de Capacitación y Adiestramiento de Personal Administrativo en el Departamento de Recursos Humanos 2011-2015."
+        },
+        {
+          id: 6,
+          cargo: "Jefa del Departamento de Servicios Estudiantiles y Gestión Escolar",
+          nombre: "Mtra. Nayelli Salazar Piñón",
+          extension: "Tel. (664) 979-7520 y 979-7521",
+          correo: "nayelli.salazar@uabc.edu.mx",
+          imagen: "icon/her.png",
+          semblanza: "archivos/semblanzas/semblanzaNSP.pdf",
+          descripcion: "Maestra en Desarrollo y Crecimiento Económico por la Universidad Carlos III de Madrid. Ha sido profesora en la Facultad de Economía de la Universidad Nacional Autónoma de México, y en las facultades de Derecho, Turismo y Mercadotecnia y Contaduría y Administración de la UABC, así como en la Preparatoria Federal Lázaro Cárdenas. Se ha desempeñado como Jefa de Departamento de Deuda Pública y Planeación Financiera de la Secretaría de Finanzas del Gobierno del Distrito Federal, así como en la iniciativa privada en Comunicaciones Nextel de México. Es titular del curso Elaboración y Evaluación de Proyectos de Inversión en la Especialidad en Dirección Financiera de la UABC."
+        },
+        {
+          id: 7,
+          cargo: "Jefe del Departamento de Recursos Humanos",
+          nombre: "Lic. Eladio Antúnez Gaytán",
+          extension: "Tel. (664) 979-7530",
+          correo: "eantunez@uabc.edu.mx",
+          imagen: "icon/him.png",
+          semblanza: "archivos/semblanzas/semblanzaEAG.pdf",
+          descripcion: "Licenciado en Derecho, egresado de la Facultad de Derecho de la UABC campus Tijuana con especialidad en Derecho Público. Desde 1989 se ha desempeñado en diferentes cargos dentro de la institución ocupando puestos como, Encargado del área de Control Patrimonial de 2003-2006, Jefe de oficina de compras de 2007-2013, administrador de la Facultad de Economía y Relaciones Internacionales 2014, desde 2009, imparte la materia de derecho del trabajo, en la Facultad de Derecho Campus Tijuana y actualmente funge como Jefe del departamento de Recursos Humanos."
+        },
+        {
+          id: 8,
+          cargo: "Asesor Jurídico",
+          nombre: "Mtro. Germán Florentino Arguilés Robert",
+          extension: "Tel. (664 )979-7510 y 979-7511",
+          correo: "garguiles@uabc.edu.mx",
+          imagen: "icon/him.png",
+          semblanza: "archivos/semblanzas/semblanzaGFAR.pdf",
+          descripcion: "Egresado de Licenciado en Derecho, Universidad Autónoma de Baja California. Maestro en Derecho Corporativo Internacional, Universidad Autónoma de Guadalajara. Abogado Postulante 2010-2011, Director Jurídico Promotora de Casas y Edificios, S.A. de C.V. (PROMOCASA) 2005-2010, Agente del Ministerio Público del Fuero Común 2002-2005, desde el 2011 se desempeña como Jefe de Oficina del Abogado General 2011-2015."
+        },
+        {
+          id: 9,
+          cargo: "Jefe del Departamento de Formación Profesional y Vinculación Universitaria",
+          nombre: "Ing. Jorge Luis Robles Contreras",
+          extension: "Tel. (664) 979-7514 y 979-7515",
+          correo: "jrobles@uabc.edu.mx",
+          imagen: "icon/him.png",
+          semblanza: "archivos/semblanzas/semblanzaJLRC.pdf",
+          descripcion: "Ingeniero Industrial Administrador por la Universidad de Sonora, fue director y socio emprendedor en organizaciones manufactureras para exportación como Tecma, Recical, Acrotec, Nortec, en Tijuana, y Mexus en San Diego, California. En 2005 fue nombrado Jefe del Departamento de Evaluación Profesional y Director del CIDETT por la modalidad del convenio entre CDT – UABC. De 2001 a 2004 fue Director de Vinculación de la Universidad Tecnológica de Tijuana (UTT). Ha participado en diferentes programas de investigación y de emprendedores con instituciones públicas del estado y el Conacyt."
+        },
+        {
+          id: 10,
+          cargo: "Jefe del Departamento de Cooperación Internacional e Intercambio Académico",
+          nombre: "Mtro. Carlos Reyna García",
+          extension: "Tel. (664) 979-7518 y 979-7519",
+          correo: "carlosreyna@uabc.edu.mx",
+          imagen: "icon/him.png",
+          semblanza: "archivos/semblanzas/semblanzaCRG.pdf",
+          descripcion: "Maestro en Educación, por el CUT Universidad de Tijuana, y licenciado en Derecho, por la UABC. Es Profesor-Investigador de la Facultad de Humanidades y Ciencias Sociales, con una antigüedad de 25 años. Fue profesor fundador del Centro de Idiomas de Tijuana 1989-1992, así como Secretario de Trabajo y Conflictos del SPSU-UABC 1992-2000. Fue Jefe del Departamento de Formación Profesional y Vinculación Universitaria del Campus Tijuana de 2003 a 2006 y Responsable de Movilidad Estudiantil en la Facultad de Humanidades y Ciencias Sociales 2006-2014."
+        },
+        {
+          id: 11,
+          cargo: "Jefe del Departamento de Información Académica",
+          nombre: "M.C. Francisco Javier Lazalde García",
+          extension: "Tel. (664) 979-7532",
+          correo: "lazalde@uabc.edu.mx",
+          imagen: "icon/him.png",
+          semblanza: "archivos/semblanzas/semblanzaFJLG.pdf",
+          descripcion: "Maestro en Ciencias Computacionales y licenciado en Matemáticas por la UANL. Ha desempeñado cargos como el de Profesor de tiempo completo en la UAP (Universidad Autónoma de Puebla) 1985-1988, Profesor de tiempo completo en el ITT (Instituto Tecnológico de Toluca) 1991-1992, Subdirector Administrativo de la Facultad de Ciencias Químicas e Ingeniería de 1999 a 2003, Técnico Académico en la Facultad de Ciencias Químicas e Ingeniería, y desde 2003 ocupa el cargo de Jefe de Información Académica del Campus Tijuana."
+        },
+        {
+          id: 12,
+          cargo: "Jefe del Departamento de Servicios Administrativos",
+          nombre: "Ing. Rubén Roa Quiñónez",
+          extension: "Tel. (664) 979-7526",
+          correo: "dsa.tij@uabc.edu.mx",
+          imagen: "icon/him.png",
+          semblanza: "archivos/semblanzas/semblanzaRRQ.pdf",
+          descripcion: "Es químico industrial por el IPN y maestro en administración de la educación superior por la UABC, donde ha desempañado diversos cargos administrativos, entre los que destacan la dirección de la Facultad de Ciencias Químicas Campus Tijuana (1976-1979), la dirección de la Facultad de Pedagogía e Innovación Educativa Campus Mexicali (2003-2009), la jefatura del Centro de Ingeniería y Tecnología, Unidad Valle de las Palmas (2009-2015). Actualmente es Profesor Ordinario de Tiempo Completo Titular “C”, en la Escuela de Ciencias de la Ingeniería y Tecnología (ECITEC)."
+        },
+      ];
+      self.dudes = [
+        {
+          id: 1,
+          cargo: "Vicerrectora Campus Tijuana",
+          nombre: "Dra. María Eugenia Pérez Morales",
+          extension: "Tel. (664) 979-7510 y 979-7511",
+          correo: "eugenia@uabc.edu.mx",
+          imagen: "icon/her.png",
+          semblanza: "archivos/semblanzas/semblanzaMEPM.pdf",
+          descripcion: "Doctora en Ciencias de la Salud y Maestra en Nutrición por la Facultad de Medicina y Psicología de la UABC. Licenciada en Química por la Facultad de Ciencias Químicas e Ingeniería de la UABC. Es miembro del Sistema Nacional de Investigadores con el nombramiento de Investigador Nacional Nivel 1. Es Profesora-Investigadora de la Facultad de Ciencias Químicas e Ingeniería con una antigüedad de 33 años, donde ha sido Subdirectora de 1993 a 1999 y Directora de 1999 a 2008. Fue también Coordinadora Estatal del Programa de Medio Ambiente de la UABC de 2008-2009."
+        }
+      ];
+      self.otros = [
+        {
+          cargo: "Departamento de Tesorería",
+          nombre: "Mtra. Alicia Magaña Hernández",
+          enlace: "http://patronato.uabc.edu.mx/",
+          imagen: "icon/her.png"
+        },
+        {
+          cargo: "Subdirector de Fundación UABC",
+          nombre: "Lic. Victor Madero Beltran",
+          enlace: "http://fundacionuabc.org/",
+          imagen: "icon/him.png"
+        },
+        {
+          cargo: "Responsable de Radio Universidad",
+          nombre: "Lic. Carlos Omar Luna Velarde.",
+          enlace: "http://djefte.com/uabcradio/",
+          imagen: "icon/him.png"
+        },
+        {
+          cargo: "Departamento de Auditoría Interna",
+          nombre: "C.P. Yazmín García Sarabia",
+          enlace: "http://patronato.uabc.edu.mx/",
+          imagen: "icon/her.png"
+        },
+        {
+          cargo: "Jefe del Departamento Sorteos Universitarios",
+          nombre: "C.P. Roberto Palomares Varela",
+          enlace: "https://www.sorteosuabc.mx/",
+          imagen: "icon/him.png"
+        },
+      ];
+    }]);
+</script>
+
+</body>
+</html>

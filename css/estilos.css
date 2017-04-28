@@ -1,0 +1,452 @@
+@font-face {
+	font-family: "Zapfino";
+	src: url(../archivos/Zapfino.otf) format("opentype");
+}
+
+.zapfino{ font-family: "Zapfino"; }
+
+body{
+  font: helvetica;
+  background-color: #ffffff;
+}
+
+.titulo{
+  color: #fdee00;
+  font-size: 50px;
+}
+
+.imagenes{
+  max-width: 100%;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.dropdown-header{
+  font-size: 16px;
+}
+
+/* navbar */
+/*Colores iniciales*/
+.navbar-default {
+    background-color: #006734;
+  }
+
+/* link */
+/*Color de fuente*/
+.navbar-default .navbar-nav > li > a {
+    color: #fff;
+}
+
+/*Color de la fuente cuando nos posicionamos sobre el elemento*/
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: #b2beb5;
+}
+.navbar-default .navbar-nav > .active > a,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > .active > a:focus {
+    color: #ffffff; /*Color de la fuente de inicio*/
+    background-color: #00341a;/*Color de fondo de inicio*/
+}
+.navbar-default .navbar-nav > .open > a,
+.navbar-default .navbar-nav > .open > a:hover,
+.navbar-default .navbar-nav > .open > a:focus {
+    color: #b2beb5; /*Color del header cuando seleccionamos un dropdown*/
+    background-color: #004e27; /*Color del fondo del header cuando seleccionamos un dropdown*/
+}
+/* caret */
+.navbar-default .navbar-nav > .dropdown > a .caret {
+    border-top-color: #fff;/*Color del caret*/
+}
+
+.navbar-default .navbar-nav > .dropdown > a:hover .caret,
+.navbar-default .navbar-nav > .dropdown > a:focus .caret {
+    border-top-color: #b2beb5; /*Color del caret cuando nos posicionamos en el*/
+}
+.navbar-default .navbar-nav > .open > a .caret,
+.navbar-default .navbar-nav > .open > a:hover .caret,
+.navbar-default .navbar-nav > .open > a:focus .caret {
+    border-top-color: #b2beb5;
+}
+
+.dropdown-menu > li > a:hover,
+.dropdown-menu > li > a:focus {
+  color: #006734; /*Letra del elemento posicionado*/
+  background-color: #fff;  /*change color of links in drop down here*/
+}
+
+.well{
+  background-color: #f5f5f5;
+}
+
+.titulo_noticia{
+  font-size: 20px;
+  color: #006734;
+  text-align: center;
+}
+
+#texto_noticia{
+  margin: 28px;
+  font-size: 15px;
+  text-align: justify;
+}
+
+
+/*Código para la sección de los icónos*/
+#lista_iconos{
+  list-style: none;
+  justify-content: space-between;
+}
+
+.texto_icono{
+  margin: 15px;
+  margin-left: 0px;
+  color: #006734;
+}
+
+.texto_icono:hover{
+  transition: 0.5s;
+  color: #cd7e26;
+}
+
+.enlace_icono{
+  color: #006734;
+}
+
+.enlace_icono:hover{
+  transition: 0.5s;
+  text-decoration: none;
+  color: #cd7e26;
+}
+
+.footer{
+  color: #006734;
+  font-size: 13px;
+  text-align: center;
+}
+
+/*Efecto dropdown on hover*/
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; // remove the gap so it doesn't close
+ }
+
+ .dropdown-header{
+   color:  #006734;
+   padding: 10px;
+   padding-left: 20px;
+ }
+
+/*Modificando el efecto del carrusel*/
+.carousel .item {
+    -webkit-transition: opacity 3s;
+    -moz-transition: opacity 3s;
+    -ms-transition: opacity 3s;
+    -o-transition: opacity 3s;
+    transition: opacity 3s;
+}
+.carousel .active.left {
+    left:0;opacity:0;z-index:2;
+}
+.carousel .next {
+    left:0;opacity:1;z-index:1;
+}
+
+/*Para la sección de Noticias*/
+.titulo_noticia{
+  text-align: center;
+  color: #006734;
+}
+.cuerpo_noticia{
+  text-align: justify;
+	white-space: pre-wrap;
+	white-space: pre-line;
+}
+
+#myModalLabel{
+  text-align: center;
+  color: #006734;
+}
+
+/*propiedades de los enlaces a otros campus*/
+#mxl, #ens {
+  color: #006734;
+  text-decoration: none;
+}
+
+/*Cambiando el color al boton de las noticias*/
+#mnoticias {
+  background-color: #006734;
+}
+
+#mnoticias:hover {
+  background-color: #00341a;
+}
+
+/*Histórico de noticias*/
+.news{
+  height: 300px;
+  margin: 15px;
+}
+
+.cuadro{
+  opacity: 0.7;
+  margin: 10px;
+}
+
+.cuadro:hover{
+  opacity: 1;
+}
+
+.not{
+  background-color: rgba(0, 26, 15, 0.8);
+  color: white;
+  padding: 5px;
+  font-size: 20px;
+  width: 84%;
+  text-align: center;
+}
+
+.news_title{
+  text-align: center;
+  color: #006734;
+}
+
+.welcome{
+  text-align: center;
+  color: #006734;
+  font-size: 20px;
+}
+.p_welcome{
+  text-align: justify;
+  font-size: 17px;
+}
+
+/*Para la sección de domicilio*/
+
+.title_ubication{
+  text-align: center;
+  color: #006734;
+  width: 70%
+}
+
+.infoubicacion{
+  width: 75%;
+  text-align: center;
+  font-size: 17px;
+  color: #006734;
+}
+
+.namediv{
+  font-size: 50px;
+  text-align: center;
+}
+
+.cargodiv{
+  text-align: center;
+  font-size: 15px;
+}
+
+.icono_opcion{
+  margin-top: 40px;
+  margin-bottom:40px;
+  margin-left: 150px;
+  opacity: 0.8;
+  width: 100px;
+  height: 100px;
+  text-align: center;
+}
+
+.icono_opcion:hover{
+  opacity: 1;
+  transition: 1s;
+}
+
+.object_title{
+  width: 250px;
+  height: 30px;
+}
+
+.object_title2{
+  width: 100px;
+  height: 100px;
+}
+
+.icontext{
+  color: #000000;
+  text-align: center;
+  margin-top: 10px;
+  width: 60%;
+}
+
+.icontext:hover{
+  color: #009a4e;
+  transition: 1s;
+}
+
+.linktext:hover{
+  text-decoration: none;
+}
+
+.listtype{
+  color:  #000000;
+  font-size: 17px;
+}
+
+.people{
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.infodiv{
+  margin-bottom: 30px;
+}
+
+.linkcivil{
+  color:  #000000;
+}
+
+.linkcivil:hover{
+  text-decoration: none;
+  color: #006734;
+}
+
+.titlescreen{
+  text-align: center;
+}
+
+.parrafo{
+  text-align: justify;
+  font-size: 15px;
+}
+
+.lista{
+  color: #006734;
+}
+
+.lista:hover{
+  text-decoration: none;
+  color: #006734;
+}
+
+.just{
+  text-align: justify;
+}
+
+.centro{
+  text-align: center;
+  width: 94%;
+}
+
+.people_wo{
+  margin-top: 20px;
+  height: 180px;
+  margin-bottom: 20px;
+  background-color: #effaea;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.people_woo{
+  margin-top: 20px;
+  height: 180px;
+  margin-bottom: 20px;
+  background-color: #fdf6ee;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.justmision{
+  text-align: justify;
+  font-size: 18px;
+}
+
+.justvision{
+  text-align: justify;
+  font-size: 17px;
+}
+
+.back{
+	text-align: right;
+	margin-top: 100px;
+	color:#006734;
+}
+
+.back:hover{
+	text-decoration: none;
+}
+
+.noticias_button{
+	width: 56%;
+}
+
+.banner{
+	margin: 0px;
+	opacity: 0.8;
+}
+
+.banner:hover{
+	opacity: 1;
+	transition: 1s;
+}
+
+.marco_{
+	margin: 0px;
+	margin-bottom: 20px;
+
+}
+
+/*Nueva Galeria*/
+.galeria{
+  margin-top: 10px;
+  margin-right: 0px;
+  margin-left: 0px;
+	align-content:stretch;
+}
+
+.imagenGaleria{
+  margin: 0px;
+  padding: 0px;
+}
+
+.elementoImagen{
+  padding: 5px;
+}
+
+.elementoImagen:hover{
+-webkit-box-shadow: inset 0 0 5px 5px #006734;
+-moz-box-shadow: inset 0 0 5px 5px #006734;
+box-shadow: inset 0 0 5px 5px #006734;
+}
+
+.carrusel{
+  margin-bottom: 30px;
+}
+
+.cuadroNoticia{
+  background-color: #fff;
+  padding: 2em;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #006734;
+  height: 210px;
+}
+
+.historico{
+	margin-top: 5px;
+	float: left;
+}
+
+#mnoticias{
+	float: right;
+	margin-right: 20px;
+}
+
+.cuadroNoticia{
+	text-align: justify;
+}
+
+.espacioGaleria{
+	float: right;
+}

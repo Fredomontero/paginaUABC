@@ -1,0 +1,442 @@
+<!-- /-->
+
+<!DOCTYPE html>
+<html lang="en" ng-app="indexApp" >
+<head>
+  <meta charset="UTF-8">
+  <title>Universidad Autónoma de Baja California</title>
+  <link rel="icon" href="images/logo.png">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <script src="bootstrap/js/jquery.min.js"></script>
+  <script src="bootstrap/js/bootstrap.js"></script>
+
+
+  <script type="text/javascript" src="js/jquery-3.0.0.min.js"></script>
+  <script type="text/javascript" src="js/jquery.cycle2.min.js"></script>
+  <script src="js/jfile.js"></script>
+  <script src="lib/angular.js" charset="utf-8"></script>
+
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body  ng-controller = "indexController" >
+
+  <!--Esta es la sección de campus, imagen y titulo de la página/-->
+  <div class="container">
+    <div class="header">
+      <div class="row col-xs-12">
+        <p>&nbsp</p>
+        <p>Campus:   <a href="http://campus.mxl.uabc.mx/" id="mxl">Mexicali   </a>|<a href="http://www.ens.uabc.mx" id="ens">   Ensenada</a></p>
+      </div>
+      <div class="titulo row">
+        <div class="col-xs-2">
+          <img src="images/logo.png" alt="logo_UABC" style="width=121 height=163" class="img-responsive">
+        </div>
+        <div class="col-xs-10" style="position: relative;">
+          <img src="images/titulo_uabc.png" alt="titulo" style="width = 923 height = 66" class="img-responsive">
+          <div class="iconos" style="position: absolute; left: 720px; top: 130px;">
+            <a href="archivos/programa.pdf"> <img src="images/programa_desarrollo.png" class="img-responsive" /></a>
+          </div>
+          <div class="iconos" style="position: absolute; left: 840px; top: 130px;">
+            <a href="archivos/Informe_2016.pdf"><img src="images/informe.png" class="img-responsive" /></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--Aqui la sección de campus, imagen y titulo de la página/-->
+
+  <!--Aquí empieza GoogleTranslate/-->
+  <div class="container">
+    <div id="google_translate_element"></div><script type="text/javascript">
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({pageLanguage: 'es', includedLanguages: 'de,en,fr,it,ja', layout: google.translate.TranslateElement.InlineLayout.SIMPLE}, 'google_translate_element');
+    }
+    </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+  </div>
+  <!--Aquí termina GoogleTranslate/-->
+
+  <!--Añadimos algunos espacios para dar formato/-->
+  <br>
+  <!--Aqui empieza el navbar/-->
+  <div class="container">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <ul class="nav navbar-nav">
+          <li class="active">
+            <a href="index.php">Inicio</a>
+          </li>
+
+          <!--Primer menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Bienvenida <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="bienvenida.html">Bienvenida</a></li>
+              <li class="divider"></li>
+              <li><a href="resenahistorica.html">Reseña Histórica</a></li>
+              <li class="divider"></li>
+              <li><a href="mision.html">Misión</a></li>
+              <li class="divider"></li>
+              <li><a href="vision.html">Visión</a></li>
+              <li class="divider"></li>
+              <li><a href="archivos/organigrama.pdf">Organigrama</a></li>
+              <li class="divider"></li>
+              <li><a href="domicilio.html">Domicilio</a></li>
+            </ul>
+          </li>
+
+          <!--Segundo menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Vicerrectoría <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="ciia.html">Cooperación Internacional e Intercambio Académico</a></li>
+              <li class="divider"></li>
+              <li><a href="sege.html">Servicios Estudiantiles y Gestión Escolar</a></li>
+              <li class="divider"></li>
+              <li><a href="pi.html">Posgrado e Investigación</a></li>
+              <li class="divider"></li>
+              <li><a href="fb.html">Formación Básica</a></li>
+              <li class="divider"></li>
+              <li><a href="fpvu.html">Formación Profesional y Vinculación Universitaria</a></li>
+              <li class="divider"></li>
+              <li><a href="pii.html">Planeación e Imagen Institucional</a></li>
+              <li class="divider"></li>
+              <li><a href="ia.html">Información Académica</a></li>
+              <li class="divider"></li>
+              <li><a href="rh.html">Recursos Humanos</a></li>
+              <li class="divider"></li>
+              <li><a href="sa.html">Servicios Administrativos</a></li>
+            </ul>
+          </li>
+
+          <!--Tercer menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Unidades Académicas <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li class="dropdown-header">Facultades</li>
+              <li><a href="http://fcqi.tij.uabc.mx/">Ciencias Químicas e Ingeniería</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/">Medicina y Psicología</a></li>
+              <li class="divider"></li>
+              <li><a href="http://odontologia.tij.uabc.mx/">Odontología</a></li>
+              <li class="divider"></li>
+              <li><a href="http://deportes.uabc.mx/Tijuana/">Deportes</a></li>
+              <li class="divider"></li>
+              <li><a href="http://fca.tij.uabc.mx">Contaduría y Administración</a></li>
+              <li class="divider"></li>
+              <li><a href="http://feyri.tij.uabc.mx/">Economía y Relaciones Internacionales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.derechotijuanauabc.com/">Derecho</a></li>
+              <li class="divider"></li>
+              <li><a href="http://ftm.tij.uabc.mx/">Turismo y Mercadotecnia</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.uabchumanidades.com/">Humanidades y Ciencias Sociales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://artes-uabc.info/">Artes</a></li>
+              <li class="divider"></li>
+              <li><a href="http://idiomas.tij.uabc.mx/">Idiomas Tijuana</a></li>
+              <li class="divider"></li>
+              <li><a href="http://idiomas.uabc.mx/web/facultad-de-idiomas/inicio">Idiomas Tecate</a></li>
+              <li class="divider"></li>
+              <li><a href="http://fintecate.uabc.edu.mx/">Ingeniería y Negocios</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Institutos</li>
+              <li><a href="http://iih.tij.uabc.mx ">Investigaciones Históricas</a></li>
+              <li class="divider"></li>
+              <li class="dropdown-header">Escuelas</li>
+              <li><a href="http://citecuvp.tij.uabc.mx/">ECITEC</a></li>
+              <li class="divider"></li>
+              <li><a href="http://cisaluduvp.tij.uabc.mx/">ECISALUD</a></li>
+            </ul>
+          </li>
+
+          <!--Cuarto menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Servicios a Estudiantes <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://csege.uabc.mx/web/csege1/convocatoria-de-becas">Becas</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.uabc.mx/cciia/">Intercambio estudiantil</a></li>
+              <li class="divider"></li>
+              <li><a href="http://serviciosocial.uabc.mx">Servicio social</a></li>
+              <li class="divider"></li>
+              <li><a href="practicasprofesionales.html">Prácticas profesionales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://csege.uabc.mx/web/csege1/tramite-unico-de-titulacion1">Titulación</a></li>
+              <li class="divider"></li>
+              <li><a href="http://egresados.uabc.mx/">Egresados</a></li>
+              <li class="divider"></li>
+              <li><a href="http://tutorias.uabc.mx:8080/login.php">Tutorías</a></li>
+              <li class="divider"></li>
+              <li><a href="http://www.uabc.mx/formacionbasica/orientacion.htm">Orientación psicopedagógica</a></li>
+              <li class="divider"></li>
+              <li><a href="http://celexbc.com.mx">Idiomas extranjeros</a></li>
+              <li class="divider"></li>
+              <li><a href="https://sites.google.com/a/uabc.edu.mx/cursos-culturales/">Cursos culturales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://deportes.uabc.mx/Tijuana/">Actividades deportivas</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=145">Atención médica</a></li>
+              <li class="divider"></li>
+              <li><a href="http://sriagral.uabc.mx/Externos/TribunalUniversitario/index.html">Tribunal universitario</a></li>
+              <li class="divider"></li>
+              <li><a href="http://cea.mxl.uabc.mx/">Centro de educación abierta</a></li>
+              <li class="divider"></li>
+              <li><a href="http://biblioteca.uabc.mx/">Biblioteca</a></li>
+            </ul>
+          </li>
+
+          <!--Quinto menu/-->
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#" >Servicios a la Comunidad <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="http://odontologia.tij.uabc.mx/clinicas/servicios.html">Salud bucal</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=145">Servicios médicos</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=147">Atención psicológica</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?page_id=139">Programa higiene escolar</a></li>
+              <li class="divider"></li>
+              <li><a href="http://medicina.tij.uabc.mx/?cat=33">Atención a niños disléxicos</a></li>
+              <li class="divider"></li>
+              <li><a href="http://celexbc.com.mx">Idiomas extranjeros</a></li>
+              <li class="divider"></li>
+              <li><a href="https://sites.google.com/a/uabc.edu.mx/cursos-culturales/">Cursos culturales</a></li>
+              <li class="divider"></li>
+              <li><a href="http://deportes.uabc.mx/Tijuana/">Actividades deportivas</a></li>
+            </ul>
+          </li>
+
+          <li><a href="directorio.html">Contacto</a></li>
+
+        </ul>
+      </div>
+    </nav>
+  </div>
+  <!--Aqui termina el navbar/-->
+  <br>
+
+
+
+
+  <!--Aquí van las imagenes/!-->
+  <div class="container barra">
+    <div class="cycle-slideshow col-xs-12 col-sm-12 col-md-6 col-lg-6 carrusel " data-cycle-speed="1500" data-cycle-timeout="1000">
+      <img class="img-responsive" src="images/imagen1.jpg" alt="imagen 0">
+      <img class="img-responsive" src="images/imagen2.jpg" alt="imagen 1">
+      <img class="img-responsive" src="images/imagen3.jpg" alt="imagen 2">
+      <img class="img-responsive" src="images/imagen4.jpg" alt="imagen 3">
+      <img class="img-responsive" src="images/imagen5.jpg" alt="imagen 4">
+      <img class="img-responsive" src="images/imagen6.jpg" alt="imagen 5">
+      <img class="img-responsive" src="images/imagen7.jpg" alt="imagen 6">
+      <img class="img-responsive" src="images/imagen8.jpg" alt="imagen 7">
+      <img class="img-responsive" src="images/imagen9.jpg" alt="imagen 8">
+      <img class="img-responsive" src="images/imagen10.jpg" alt="imagen 10">
+      <img class="img-responsive" src="images/imagen11.jpg" alt="imagen 11">
+      <img class="img-responsive" src="images/imagen12.jpg" alt="imagen 12">
+      <img class="img-responsive" src="images/imagen13.jpg" alt="imagen 13">
+      <img class="img-responsive" src="images/imagen14.jpg" alt="imagen 14">
+      <img class="img-responsive" src="images/imagen15.jpg" alt="imagen 15">
+      <img class="img-responsive" src="images/imagen16.jpg" alt="imagen 16">
+    </div>
+    <div class="espacioGaleria col-xs-12 col-sm-12 col-md-6 col-lg-6">
+      <!-- Resumen inicial -->
+      <div class="cuadroNoticia">
+        <h1 class="titulo_noticia">Se llevó a cabo taller de concientización 'Por inclusión y desarrollo, Únete'</h1>
+        <p class="texto_noticia">El Departamento de Recursos Humanos del Campus Tijuana convocó a los trabajadores  administrativos a un taller de concientización que busca fomentar la inclusión de personas  con discapacidad en la atención...</p>
+      </div>
+      <div class="galeria">
+        <div class="imagenGaleria col-xs-4">
+          <img id="noticiaUno"class="img-responsive elementoImagen" data-toggle="modal" data-target="#myModal1" src="images/noticia1.jpg" alt="">
+        </div>
+        <!-- Cuerpo de la noticia número 1 -->
+        <div class="modal fade" id="myModal1" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{noticiaUno.titulo}}</h4>
+              </div>
+              <div class="modal-body">
+                <img src="images/noticia1.jpg" class="img-responsive" />
+                <p class="cuerpo_noticia">
+                {{noticiaUno.fecha}}
+                <br><br>
+                {{noticiaUno.contenido}}
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--Fin de noticia número 1/!-->
+
+        <div class="imagenGaleria col-xs-4">
+          <img id="noticiaDos"class="img-responsive elementoImagen" data-toggle="modal" data-target="#myModal2" src="images/noticia2.jpg" alt="">
+        </div>
+        <!--Noticia número 2/!-->
+        <div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{noticiaDos.titulo}}</h4>
+              </div>
+              <div class="modal-body">
+                <img src="images/noticia2.jpg" class="img-responsive" />
+                <p class="cuerpo_noticia">
+                {{noticiaDos.fecha}}
+                <br><br>
+                {{noticiaDos.contenido}}
+                </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Fin del cuerpo de la noticia número 2 -->
+
+        <div class="imagenGaleria col-xs-4">
+          <img id="noticiaTres"class="img-responsive elementoImagen" data-toggle="modal" data-target="#myModal3" src="images/noticia3.jpg" alt="">
+        </div>
+        <!--Noticia número 3/!-->
+        <div class="modal fade" id="myModal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">{{noticiaTres.titulo}}</h4>
+              </div>
+              <div class="modal-body">
+                <img src="images/noticia3.jpg" class="img-responsive" />
+                  <p class="cuerpo_noticia">
+                  {{noticiaTres.fecha}}
+                  <br><br>
+                  {{noticiaTres.contenido}}
+                  </p>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">Cerrar</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+        <!-- Fin del cuerpo de la noticia número 3 -->
+
+      </div>
+
+      <div class="container">
+        <div class="historico col-xs-6 col-xs-offset-6 ">
+          <a href="archivos/noticias.html"><button type="button" class="btn btn-primary mNoticias "  data-dismiss="modal" id="mnoticias" >Más noticias</button></a>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+  <!--Aquí termina la sección de imagenes/!-->
+
+
+  <!--Aquí empieza la sección de Banners/!-->
+  <br> <br> <br>
+  <div class="col-xs-10 col-md-12 col-xs-offset-1 container">
+        <div class="col-xs-12 col-md-2 marco_"><a href="images/ecitecBig.png"><img src="images/ecitec.png" class="img-responsive banner"></a></div>
+        <div class="col-xs-12 col-md-2 marco_"><a href="http://nutricon.org/"><img src="images/nutricion.png" class="img-responsive banner"></a></div>
+        <div class="col-xs-12 col-md-2 marco_"><a href="images/acopioBig.jpg"><img src="images/acopio.png" class="img-responsive banner"></a></div>
+        <div class="col-xs-12 col-md-2 marco_"><a href="images/CIADDocument.PDF"><img src="images/ciad.png" class="img-responsive banner"></a></div>
+		<div class="col-xs-12 col-md-2 marco_"><a href="images/feyriBig.jpg"><img src="images/feyri.png" class="img-responsive banner"></a></div>
+  </div>
+
+  <!--Aquí termina la sección de Banners/!-->
+
+  <div class="container">
+
+    <br> <br><br>
+
+    <div class="col-sm-12">
+      <img src="images/separador2.png" class="img-responsive">
+    </div>
+
+    <br> <br> <br><br>
+
+    <div class="row" id="lista">
+      <!--Primer columna/!-->
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="http://www.uabc.mx/dir-tel/"><img src="icon/directorio.png" height="30" width="30"> Directorio telefónico </a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://biblioteca.uabc.mx/"><img src="icon/biblioteca.png" height="30" width="30"> Biblioteca</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://sriagral.uabc.mx/Externos/AbogadoGeneral/Legislacion/Reg.htm"><img src="icon/normatividad.png" height="30" width="30"> Normatividad</a></li>
+        </ul>
+      </div>
+
+      <!--Segunda Columna columna/!-->
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="http://correo.uabc.edu.mx"><img src="icon/correo.png" height="30" width="30"> Correo UABC</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="programas.pdf"><img src="icon/posgrado.png" height="30" width="30"> Posgrados</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://www.uabc.mx/juntadegobierno/  "><img src="icon/gobierno.png" height="30" width="30"> Junta de Gobierno</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="archivos/plano.pdf"><img src="icon/mapa.png" height="30" width="30"> Plano del Campus</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://gaceta.uabc.edu.mx/"><img src="icon/periodico.png" height="30" width="30"> Gaceta Universitaria</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://transparencia.uabc.mx/"><img src="icon/transparencia.png" height="30" width="30"> Transparencia</a></li>
+        </ul>
+      </div>
+
+      <div class="col-sm-3">
+        <ul id="lista_iconos">
+          <li class="texto_icono"> <a class="enlace_icono" href="archivos/reunion.pdf"><img src="icon/reunion.png" height="30" width="30"> Puntos de Reunión</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://www.imagenuabc.tv/"><img src="icon/galeria.png" height="30" width="30"> Imagen UABC tv</a></li>
+          <li class="texto_icono"> <a class="enlace_icono" href="http://fundacionuabc.org/"><img src="icon/FUABC.png" height="30" width="30"> Fundación UABC</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+<br><br><br><br><br>
+
+  <div class="container">
+    <div class="footer">
+      <p>
+        Calzada Universidad 14418 Parque Industrial Internacional Tijuana B.C. 22427 Tel.979 75 00. Actualizada 07-Febrero-2017. <br>
+        Horario de servicio de 8:30 am a 1:30 pm y de 3:00 pm a 6:00 pm | Comentarios y sugerencias a: vicerrectoriatij@uabc.edu.mx
+      </p>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var indexApp = angular.module("indexApp",[]);
+    indexApp.controller("indexController",function($scope){
+      $scope.nombre = "Christian";
+      $scope.noticiaUno = {
+        titulo : "Se llevó a cabo taller de concientización 'Por inclusión y desarrollo, Únete'",
+		imagen: "../images/historico/noticia178.jpg",
+		fecha: 'Campus Tijuana a 24 de abril de 2017',
+		contenido:"El Departamento de Recursos Humanos del Campus Tijuana convocó a los trabajadores  administrativos a un taller de concientización que busca fomentar la inclusión de personas  con discapacidad en la atención que se brinda en la prestación de servicios a universitarios.\n\n  El taller fue impartido por el Lic. Melchor De La Rocha en la Biblioteca Central y contó  con una asistencia de 31 trabajadores, principalmente del departamento de información  académica. Tuvo una duración tres horas y media, en donde se trataron temas sobre  discapacidad motriz, visual, auditiva e intelectual. Además se les invitó a los asistentes a  hacer uso correcto de los términos para referirse a las personas con discapacidad y la  manera correcta de brindarles ayuda.",
+      };
+      $scope.noticiaDos = {
+        titulo : "Capacitan a alumnos universitarios en metodología Kaizen",
+		imagen: "../images/historico/noticia177.jpg",
+		fecha: 'Campus Tijuana a 24 de abril de 2017',
+		contenido:"La Facultad de Contaduría y Administración, a través de la Coordinación de Administración de  Operaciones, realizaron el Evento Kaizen en la Universidad Autónoma del Campus Tijuana.  El principal objetivo es que alumnos de la materia de Administración de la Calidad apliquen la  metodología Kaizen a las micros y pequeñas empresas, ya que es importante que desarrollen  conocimiento al enfrentarse en el campo laboral.\n\n  Kaizen es el mejoramiento continuo y esta filosofía se compone de varios pasos que permiten  analizar variables críticas del proceso de producción para mejorar con la ayuda de equipos  multidisciplinarios.\n\n  La licenciada Laura López García, Gerente de Mejora Continua de Welch Allyn de  México, impartió la Conferencia Magistral “Innovación a través del pensamiento Kaizen” y  mencionó que uno de los principales éxitos que existen para un mejoramiento continuo es  tener a todas las personas que participan a lo largo de la carrera productiva “cuando  nosotros nos ponemos metas es para mejorar y romper las expectativas, sobre todo es  hacerlo con equipos multidisciplinarios uniendo el esfuerzo de cada uno”.\n\n  Cabe mencionar que hay más de 190 cimarrones de esta asignatura contribuyendo a estos  trabajos de campo en diversas empresas y esto ayuda a tener un mayor conocimiento para que  los alumnos se den cuenta en qué lugares se implementan estas metodologías.\n\n  Estuvieron presentes el doctor Duniesky Feito Madrigal, Coordinador del programa  educativo Administración de Empresas; el doctor Jorge Alfonso Galván León, subdirector  de la Facultad de Contaduría y Administración, así como estudiantes de la unidad  académica.",
+      };
+      $scope.noticiaTres = {
+        titulo : "Inauguran III Congreso Internacional de Educación Artística",
+		imagen: "../images/historico/noticia176.jpg",
+		fecha: 'Campus Tijuana a 24 de abril de 2017',
+		contenido:"Con el objetivo de abordar diversas herramientas, procesos y métodos de creación artística  contemporáneas en función de su distribución en el mercado del arte actual, a partir del  análisis de las tendencias en cuanto a los procesos de identificación y selección por parte de  entidades como museos, centros, escuelas, espacios independientes, organizaciones,  galerías y casas de subastas, se realizó la inauguración del III Congreso Internacional de  Educación Artística en el Teatro Rubén Vizcaíno Valencia, Campus Tijuana.\n\n  “Nosotros todo el tiempo buscamos estar reflexionando y pensando las artes, es decir, una  Facultad de Artes, una instancia educativa del nivel de la facultad y del nivel de la UABC,  siempre tiene que estar, además producir arte, pensando el arte, reflexionando alrededor de  él, viendo las diversas posturas que hay, y sobre todo en el arte contemporáneo en el área  de las artes visuales”, comentó el maestro Daniel Serrano Moreno, Director de la Facultad  de Artes.\n\n  El programa del III Congreso Internacional de Educación Artística, se integra por  conferencias y talleres abiertos a todos los interesados en el tema, así mismo, el miércoles  26 se inaugurará la exposición Obra de Maestros II y el viernes 27 se llevará a cabo el Foro  de Maestros II, cuyo propósito es mostrar los métodos de producción utilizados por los  profesores de la licenciatura en Artes Plásticas que participan en dicha exposición, con el  objeto de fortalecer al programa de licenciatura al explicitar los mecanismos que operan en  la creación y ejecución de la obra, así como los temas o conceptos que se desarrollan en el  Arte Contemporáneo en el contexto al que se pertenece.\n\n  Al terminar el acto inaugural dio la conferencia “Administrando los límites”, de  Cuauhtémoc Medina González, quien es crítico, curador oficial de Francis Alys e  historiador. En su conferencia analizó las tareas curatoriales en las instituciones y museos,  así mismo se discutió el problema con límites políticos, morales y prácticos de una  institución.\n\n  El III Congreso Internacional de Educación Artística es organizado por alumnos y docentes  de la Licenciatura en Artes Plásticas y el cuerpo académico Imagen y Creación, bajo la  coordinación general y académica del maestro Jhosell Rosell Castro.  En esta edición del congreso, todas las actividades forman parte del programa 8=1, que  permite obtener créditos académicos asistiendo a actividades de formación continua y  extensión cultural.\n\n  Todas las actividades son Entrada Libre, abiertas al público en general. Para mayor  información, se puede consultar la página del congreso  (https://web.facebook.com/CIEAUABC)",
+      };
+    });
+  </script>
+
+</body>
+</html>
